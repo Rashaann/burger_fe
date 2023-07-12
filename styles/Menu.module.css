@@ -1,3 +1,7 @@
+.body {
+    cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-french-fries-48_wqlbjt.png) 4 5, auto;
+}
+
 .container {
     display: flex;
     justify-content: center;

@@ -27,7 +27,7 @@ export default function Menu() {
     )
   })
   return (
-    <div>
+    <div className={styles.body}>
       <Header />
       <div className={styles.container}>{dispItems}</div>
       <Footer />

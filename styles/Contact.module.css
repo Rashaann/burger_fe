@@ -1,3 +1,8 @@
+.body {
+    cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
