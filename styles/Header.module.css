@@ -1,0 +1,52 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    position: fixed;
+    background-color: white;
+}
+
+.body::scrolled{
+    background-color: green;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+}
+
+.body2 {
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+}
+
+
+
+
+
+
+
+.title {
+    cursor: pointer;
+}
+
+
+
+
+
+.subHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+}
+
+.items{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
