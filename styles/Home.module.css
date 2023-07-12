@@ -63,6 +63,16 @@
   font-size: 40px;
 }
 
+.text {
+  color: rgb(152, 150, 150);
+}
+
+.price {
+  font-size: 45px;
+  font-weight: 900;
+  color: rgb(251, 60, 64);
+}
+
 .seeMoreBtn{
   transition: 300ms ease-out;
   background-color: rgb(251, 60, 64);

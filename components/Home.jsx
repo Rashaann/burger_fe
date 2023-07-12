@@ -45,9 +45,9 @@ function Home() {
           <div className={styles.specialOffersRightPartContainer}>
             <div className={styles.specialOffersHeader}>PROMO</div>
             <div className={styles.specialOffersRightPart}>
-              <h2 className={styles.h2}>Title</h2>
-              <p className={styles.text}>Text</p>
-              <p className={styles.subText}>Subtext</p>
+              <h2 className={styles.h2}>TERIYAKI BURGER</h2>
+              <p className={styles.text}>Bun sésame (ou sans gluten +1€), artisanal steak haché de bœuf maturé (ou beyond meat +2€), cébette, sauce teriyaki maison, chou mariné, shichimi togarashi (mélange 7 épices), mayo japonaise.</p>
+              <p className={styles.price}>10,00€</p>
               <button
                 className={styles.seeMenuBtn}
                 onClick={() => Router.push('/menu')}>VOIR LE MENU</button>
@@ -63,9 +63,9 @@ function Home() {
           <div className={styles.specialOffersRightPartContainer}>
             <div className={styles.specialOffersHeader}>PROMO</div>
             <div className={styles.specialOffersRightPart}>
-              <h2 className={styles.h2}>Title</h2>
-              <p className={styles.text}>Text</p>
-              <p className={styles.subText}>Subtext</p>
+              <h2 className={styles.h2}>LOU SALEYA</h2>
+              <p className={styles.text}>Ce burger est un hommage culinaire au pays niçois et à sa gastronomie.</p>
+              <p className={styles.price}>9,00€</p>
               <button
                 className={styles.seeMenuBtn}
                 onClick={() => Router.push('/menu')}>VOIR LE MENU</button>

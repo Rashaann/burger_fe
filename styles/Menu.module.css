@@ -2,6 +2,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
+    padding-top: 180px;
+    min-height: 100vh;
+}
+
+
+.burgerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
 }
