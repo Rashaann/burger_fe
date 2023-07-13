@@ -9,13 +9,6 @@
     background-color: white;
 }
 
-.body::scrolled{
-    background-color: green;
-    width: 100vw;
-    height: 10vh;
-    position: fixed;
-}
-
 .body2 {
     background-color: white;
     width: 100vw;
@@ -25,17 +18,9 @@
 
 
 
-
-
-
-
 .title {
     cursor: pointer;
 }
-
-
-
-
 
 .subHeader{
     display: flex;
