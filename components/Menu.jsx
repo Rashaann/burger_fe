@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 import styles from '../styles/Menu.module.css';
+import Link from 'next/link';
 
 export default function Menu() {
   const [burgersList, setBurgersList] = useState([]);
@@ -22,7 +23,9 @@ export default function Menu() {
   const dispItems = burgersList.map((el, i) => {
     return (
       <div className={styles.burgerContainer}>
-        <img src={el.image} width={250} height={250} style={{borderRadius: 15}} />
+        <Link key={i} href={{pathname:`/burgers/[burger]`, query: {id: el.id}}} as={`/burgers/${el.id}`} >
+          <img src={el.image} width={250} height={250} style={{borderRadius: 15}} />
+        </Link>
       </div>
     )
   })
