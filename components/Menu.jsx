@@ -20,11 +20,15 @@ export default function Menu() {
   },[]);
 
 
+
+
   const dispItems = burgersList.map((el, i) => {
-    return (
-      <div className={styles.burgerContainer}>
-        <Link key={i} href={{pathname:`/burgers/[burger]`, query: {id: el.id}}} as={`/burgers/${el.id}`} >
-          <img src={el.image} width={250} height={250} style={{borderRadius: 15}} />
+    let isMouseDown = styles.image;
+    return (//agrandir image onHover
+      <div className={styles.burgerContainer} onMouseOver={() => isMouseDown = styles.imageHovered} onMouseLeave={() => isMouseDown =styles.image}>
+        <Link key={i} href={{pathname:`/burgers/[burger]`, query: {id: el.id}}} as={`/burgers/${el.id}`} className={`slideRight ${styles.link}`}>
+          <img src={el.image} className={styles.image} />
+          <p className={styles.title}>{el.name}</p>
         </Link>
       </div>
     )

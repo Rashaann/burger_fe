@@ -48,12 +48,24 @@ export default function Burger() {
         <div className={styles.body}>
             <Header />
 
-            <div className={styles.container}>
-                <p>{selectedBurger.name}</p>
+            <div className={`fadeIn ${styles.container}`}>
+                <p className={styles.name}>{selectedBurger.name}</p>
                 <img src={selectedBurger.image} width={400} />
-                <p>{selectedBurger.description}</p>
-                <p>{selectedBurger.ingredients}</p>
-                <p>{selectedBurger.price}€</p>
+                <div className={styles.subContainer}>
+                    <div className={styles.descriptionContainer}>
+                        <h3 className={styles.title}>DESCRIPTION:</h3>
+                        <p className={styles.text}>{selectedBurger.description}</p>
+                    </div>
+                    <div className={styles.ingredientsContainer}>
+                        <h3 className={styles.title}>INGREDIENTS:</h3>
+                        <p className={styles.text}>{selectedBurger.ingredients}</p>
+                    </div>
+                    <p className={styles.price}>{selectedBurger.price}€</p>
+                </div>
+                <div className={styles.btnsContainer}>
+                    <button className={styles.cartBtn}>AJOUTER AU PANIER</button>
+                    <button className={styles.buyBtn}>ACHETER</button>
+                </div>
             </div>
 
             <Footer />
