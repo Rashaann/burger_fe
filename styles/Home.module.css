@@ -57,17 +57,28 @@
 }
 
 .aboutRightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40vw;
   height: 55vh;
   padding-left: 30px;
 }
 
 .h2{
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .text {
   color: rgb(152, 150, 150);
+  width: 30vw;
+  font-size: 18px;
+}
+
+.subText {
+  font-size: 14px;
+  width: 30vw;
 }
 
 .price {
@@ -142,6 +153,9 @@
 }
 
 .specialOffersRightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40vw;
   height: 55vh;
   padding-left: 30px;

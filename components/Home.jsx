@@ -48,9 +48,10 @@ function Home() {
           <div className={styles.aboutRightPartContainer}>
             <div className={styles.aboutHeader}>A PROPOS</div>
             <div className={styles.aboutRightPart}>
-              <h2 className={styles.h2}>Title</h2>
-              <p className={styles.text}>Text</p>
-              <p className={styles.subText}>Subtext</p>
+              <h2 className={styles.h2}>Burger, créateur de burgers</h2>
+              <p className={styles.text}>Le produit est au coeur de la démarche Burger en proposant aux clients une large gamme.
+              La carte propose bien évidemment des burgers mais aussi de nombreux autres produits.</p>
+              <p className={styles.subText}>Burger se différencie avec un goût authentique, l'originalité des recettes, la variété des produits et, bien sûr, la générosité.</p>
               <button
                 className={styles.seeMoreBtn}
                 onClick={() => Router.push('/about')}>VOIR PLUS</button>
