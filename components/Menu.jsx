@@ -10,7 +10,7 @@ export default function Menu() {
 
 
   useEffect(() => {
-    fetch("http://192.168.0.35:3000/burgers/all")
+    fetch("https://burgers-be.vercel.app/burgers/all")
     .then(response => response.json())
     .then(data => {
       if(data.result){
