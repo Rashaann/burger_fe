@@ -7,6 +7,8 @@ import styles from '../styles/Burger.module.css';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { loadStripe } from '@stripe/stripe-js';
+import axios from 'axios';
 
 export default function Burger() {
 
@@ -31,6 +33,38 @@ export default function Burger() {
         }
     })
   },[router.query.burger]);
+
+
+  useEffect(() => {
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('success')) {
+      console.log('Order placed! You will receive an email confirmation.');
+    }
+
+    if (query.get('canceled')) {
+      console.log('Order canceled -- continue to shop around and checkout when you’re ready.');
+    }
+  }, []);
+
+
+  const createCheckOutSession = async () => {
+    const publishableKey = String(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+    const stripePromise = loadStripe(publishableKey);
+    const createCheckOutSession = async () => {
+        setLoading(true);
+        const stripe = await stripePromise;
+        const checkoutSession = await axios.post('/api/create-stripe-session', {
+        item: selectedBurger.stripeId,
+        });
+        const result = await stripe.redirectToCheckout({
+        sessionId: checkoutSession.data.id,
+        });
+        if (result.error) {
+        alert(result.error.message);
+        }
+        setLoading(false);
+    };
+    }
 
 
 
@@ -67,7 +101,16 @@ export default function Burger() {
                 </div>
                 <div className={styles.btnsContainer}>
                     <button className={styles.cartBtn}>AJOUTER AU PANIER</button>
-                    <button className={styles.buyBtn}>ACHETER</button>
+                    <form action="/api/checkout_sessions" method="POST">
+                        <button
+                            className={styles.buyBtn}
+                            type="submit"
+                            role="link"
+                            onClick={createCheckOutSession}
+                        >
+                            ACHETER
+                        </button>
+                    </form>
                 </div>
             </div>:
             <div className={styles.container}>

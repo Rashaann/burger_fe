@@ -9,26 +9,14 @@ import Head from 'next/head';
 
 
 function Home() {
-  const [scrollTop, setScrollTop] = useState(0);
-  const [isWindowUsable, setIsWindowUsable] = useState(false);
-  const listInnerRef = useRef();
 
-  const handleScroll = (height) => {
-    setScrollTop(height);
-    console.log(window.scrollY);
-  };
+  const [isLoaded, setIsLoaded] = useState(false);
 
 
 
   useEffect(()=> {
-    if (typeof window !== 'undefined') {
-      // 👉️ can use window here
-      console.log('You are on the browser')
-    
-      console.log(document.body);
-      setIsWindowUsable(true);
-    }
-  },[isWindowUsable]);
+    setIsLoaded(true);
+  },[]);
   //PB -> GET CONTINIOUSLY window.scrollY VALUE
   
 
@@ -43,6 +31,7 @@ function Home() {
         {/* <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossOrigin="anonymous"/> */}
       </Head>
+
 
       <div className={styles.body}>
         <Header />
@@ -148,7 +137,6 @@ function Home() {
           </div>
      
         </div>
-        {isWindowUsable && window.scrollY>=350?
         <div className={`slideRight ${styles.about}`}>
           <div>
             <img src='burger6.png' width={370} style={{borderRadius: 20}} />
@@ -165,12 +153,10 @@ function Home() {
                 onClick={() => Router.push('/about')}>VOIR PLUS</button>
             </div>
           </div>
-        </div>:
-        <div className={`slideLeft ${styles.about}`}></div>}
+        </div>
         {/* <button onClick={() => handleScroll()} >CLICK ME!</button> */}
 
         <div className={styles.specialOffersContainer}>
-          {isWindowUsable && window.scrollY>=680?
           <div className={`${styles.specialOffers} slideRight`}>
             <div>
               <img src='brgr7.jpeg' width={450} style={{borderRadius: 15}} />
@@ -187,10 +173,8 @@ function Home() {
                   onClick={() => Router.push('/menu')}>VOIR LE MENU</button>
               </div>
             </div>
-          </div>:
-          <div className={`slideLeft ${styles.specialOffers}`}></div>}
+          </div>
           
-          {isWindowUsable && window.scrollY >= 850?
           <div className={`${styles.specialOffers} slideRight`}>
             <div>
               <img src='brgr12.jpg' width={450} style={{borderRadius: 15}} />
@@ -207,9 +191,7 @@ function Home() {
                   onClick={() => Router.push('/menu')}>VOIR LE MENU</button>
               </div>
             </div>
-          </div>:
-          <div className={styles.specialOffers}></div>}
-
+          </div>
         </div>
         <Footer />
       </div>

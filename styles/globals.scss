@@ -39,6 +39,43 @@
 
 
 
+//SLIDE RIGHT ANIMATION
+.slideLeft {
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  /* New code here: */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(150%);
+  }
+}
+  
+@-webkit-keyframes slideLeft {
+    0% {
+    -webkit-transform: translateX(0%);
+    }
+
+    100% {
+    -webkit-transform: translateX(150%);
+    }
+}
+
+
+
+
+
 
 //FADE IN ANIMATION
 
@@ -181,6 +218,9 @@
 }
 
 .slider .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
   width: 250px;
 }
