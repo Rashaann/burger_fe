@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import styles from '../styles/Home.module.css';
 import Header from './Header';
@@ -10,14 +10,27 @@ import Head from 'next/head';
 
 function Home() {
   const [scrollTop, setScrollTop] = useState(0);
+  const [isWindowUsable, setIsWindowUsable] = useState(false);
+  const listInnerRef = useRef();
 
   const handleScroll = (height) => {
     setScrollTop(height);
     console.log(window.scrollY);
   };
-  // useEffect(()=> {
-  //   setScrollTop(document.documentElement.scrollTop);
-  // },[]);
+
+
+
+  useEffect(()=> {
+    if (typeof window !== 'undefined') {
+      // 👉️ can use window here
+      console.log('You are on the browser')
+    
+      console.log(document.body);
+      setIsWindowUsable(true);
+    }
+  },[isWindowUsable]);
+  //PB -> GET CONTINIOUSLY window.scrollY VALUE
+  
 
 
   return (
@@ -35,13 +48,108 @@ function Home() {
         <Header />
         
         <div key={1} className={styles.container}>
-          <h1 className={`${styles.title} slideRight`}>
-            Burger, les meilleurs burgers de Paris.
-          </h1>
+          <div className={`zoomInOutBox ${styles.subContainer}`}>
+            <h1 className={styles.title}>
+              Burger, les meilleurs burgers de Paris.
+            </h1>
+          </div>
         </div>
         {/* <button onClick={() => handleScroll()} >CLICK ME!</button> */}
-        {scrollTop>=350?
-        <div onMouseOver={() => handleScroll(window.scrollY)} className={`slideRight ${styles.about}`}>
+        <div class=" slider sliderR">
+          <div class="slide-trackR">
+            <div class="slide slideword1">
+              authenticité
+            </div>
+            <div class="slide slideword2">
+              originalité
+            </div>
+            <div class="slide slideword3">
+              générosité
+            </div>
+            <div class="slide slideword1">
+              variété
+            </div>
+            <div class="slide slideword2">
+              goût
+            </div>
+            <div class="slide slideword3">
+              savoir-faire
+            </div>
+            <div class="slide slideword1">
+              saveurs
+            </div>
+            <div class="slide slideword2">
+              authenticité
+            </div>
+            <div class="slide slideword3">
+              originalité
+            </div>
+            <div class="slide slideword1">
+              générosité
+            </div>
+            <div class="slide slideword2">
+              variété
+            </div>
+            <div class="slide slideword3">
+              goût
+            </div>
+            <div class="slide slideword1">
+              savoir-faire
+            </div>
+            <div class="slide slideword2">
+              saveurs
+            </div>
+          </div>
+        </div>
+        <div class=" sliderL slider ">
+          <div class="slide-trackL">
+            <div class="slide slideword3">
+              saveurs
+            </div>
+            <div class="slide slideword2">
+              savoir-faire
+            </div>
+            <div class="slide slideword1">
+              goût
+            </div>
+            <div class="slide slideword3">
+              variété
+            </div>
+            <div class="slide slideword2">
+              générosité
+            </div>
+            <div class="slide slideword1">
+              originalité
+            </div>
+            <div class="slide slideword3">
+              authenticité
+            </div>
+            <div class="slide slideword2">
+              saveurs
+            </div>
+            <div class="slide slideword1">
+              savoir-faire
+            </div>
+            <div class="slide slideword3">
+              goût
+            </div>
+            <div class="slide slideword2">
+              variété
+            </div>
+            <div class="slide slideword1">
+              générosité
+            </div>
+            <div class="slide slideword3">
+              originalité
+            </div>
+            <div class="slide slideword2">
+              authenticité
+            </div>
+          </div>
+     
+        </div>
+        {isWindowUsable && window.scrollY>=350?
+        <div className={`slideRight ${styles.about}`}>
           <div>
             <img src='burger6.png' width={370} style={{borderRadius: 20}} />
           </div>
@@ -58,12 +166,12 @@ function Home() {
             </div>
           </div>
         </div>:
-        <div onMouseOver={() => handleScroll(window.scrollY)} className={`slideLeft ${styles.about}`}></div>}
+        <div className={`slideLeft ${styles.about}`}></div>}
         {/* <button onClick={() => handleScroll()} >CLICK ME!</button> */}
 
         <div className={styles.specialOffersContainer}>
-          {scrollTop>=680?
-          <div onMouseOver={() => handleScroll(window.scrollY)} className={`${styles.specialOffers} slideRight`}>
+          {isWindowUsable && window.scrollY>=680?
+          <div className={`${styles.specialOffers} slideRight`}>
             <div>
               <img src='brgr7.jpeg' width={450} style={{borderRadius: 15}} />
             </div>
@@ -80,10 +188,10 @@ function Home() {
               </div>
             </div>
           </div>:
-          <div onMouseOver={() => handleScroll(window.scrollY)} className={`slideLeft ${styles.specialOffers}`}></div>}
+          <div className={`slideLeft ${styles.specialOffers}`}></div>}
           
-          {scrollTop >= 800?
-          <div onMouseOver={() => handleScroll(window.scrollY)} className={`${styles.specialOffers} slideRight`}>
+          {isWindowUsable && window.scrollY >= 850?
+          <div className={`${styles.specialOffers} slideRight`}>
             <div>
               <img src='brgr12.jpg' width={450} style={{borderRadius: 15}} />
             </div>
@@ -100,9 +208,9 @@ function Home() {
               </div>
             </div>
           </div>:
-          <div onMouseOver={() => handleScroll(window.scrollY)} className={styles.specialOffers}></div>}
+          <div className={styles.specialOffers}></div>}
+
         </div>
-        
         <Footer />
       </div>
     </>

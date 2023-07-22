@@ -11,6 +11,7 @@ import { useRouter } from 'next/router';
 export default function Burger() {
 
   const [selectedBurger, setSelectedBurger] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
   const router = useRouter();
   const id = router.query.id;
 
@@ -24,6 +25,7 @@ export default function Burger() {
             console.log(router.query)
             if(JSON.stringify(el.id) === JSON.stringify(router.query.burger)){
                 setSelectedBurger(el);
+                setIsLoaded(true);
             }
         });
         }
@@ -48,6 +50,7 @@ export default function Burger() {
         <div className={styles.body}>
             <Header />
 
+            {isLoaded?
             <div className={`fadeIn ${styles.container}`}>
                 <p className={styles.name}>{selectedBurger.name}</p>
                 <img src={selectedBurger.image} width={400} />
@@ -66,7 +69,13 @@ export default function Burger() {
                     <button className={styles.cartBtn}>AJOUTER AU PANIER</button>
                     <button className={styles.buyBtn}>ACHETER</button>
                 </div>
-            </div>
+            </div>:
+            <div className={styles.container}>
+                <div class="loader3">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>}
 
             <Footer />
         </div>

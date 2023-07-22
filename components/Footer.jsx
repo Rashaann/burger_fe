@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className={styles.body}>
         <div className={styles.container}>
-          <h3>LOGO</h3>
+          <h3 className={styles.logo}>BURGER</h3>
           <div className={styles.subContainer}>
             <p>Text</p>
             <p>ICONS</p>
@@ -13,7 +13,7 @@ function Footer() {
         </div>
 
         <div className={styles.container}>
-          <h3>Contacts</h3>
+          <h3 className={styles.title}>Contacts</h3>
           <div className={styles.subContainer}>
             <p>Position</p>
             <p>Phone number</p>
@@ -23,7 +23,7 @@ function Footer() {
         </div>
 
         <div className={styles.container}>
-          <h3>Newsletter</h3>
+          <h3 className={styles.title}>Newsletter</h3>
           <div className={styles.subContainer}>
             <p>Enter your email</p>
             <p>SUBSCRIBE</p>

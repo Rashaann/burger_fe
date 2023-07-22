@@ -4,3 +4,13 @@
     width: 100vw;
     height: 45vh;
 }
+
+
+.logo{
+    color: rgb(245, 130, 49);
+    font-weight: bold;
+}
+
+.title {
+    color: rgb(245, 130, 49);
+}

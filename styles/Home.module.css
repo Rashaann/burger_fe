@@ -22,8 +22,20 @@
 }
 
 
+.subContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 60vw;
+  height: 30vh;
+  padding: 20px;
+}
+
+
 .title {
-  font-size: 60px
+  font-size: 60px;
+  font-weight: bold;
 }
 
 

@@ -20,6 +20,8 @@
 
 .title {
     cursor: pointer;
+    color: rgb(245, 130, 49);
+    font-weight: bold;
 }
 
 .subHeader{

@@ -63,10 +63,7 @@
   
 @keyframes zoomInZoomOut {
     0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.5, 1.5);
+      transform: scale(0, 0);
     }
     100% {
       transform: scale(1, 1);
@@ -78,3 +75,134 @@
 
 
 //ANIMATIONS -> BUTTONS
+
+
+
+//ANIMATION -> LOADER
+.loader3 {
+  width:200px;
+  height:200px;
+  display:inline-block;
+  padding:0px;
+  text-align:left;
+}
+.loader3 span {
+  position:absolute;
+  display:inline-block;
+  width:200px;
+  height:200px;
+  border-radius:100%;
+  background:rgba(245, 130, 49, 1);
+  -webkit-animation:loader3 1.5s linear infinite;
+  animation:loader3 1.5s linear infinite;
+}
+.loader3 span:last-child {
+  animation-delay:-0.9s;
+  -webkit-animation-delay:-0.9s;
+}
+@keyframes loader3 {
+  0% {transform: scale(0, 0);opacity:0.8;}
+  100% {transform: scale(1, 1);opacity:0;}
+}
+@-webkit-keyframes loader3 {
+  0% {-webkit-transform: scale(0, 0);opacity:0.8;}
+  100% {-webkit-transform: scale(1, 1);opacity:0;}
+}
+
+
+
+
+
+
+
+
+//ANIMATIONS -> SLIDERS
+
+@keyframes scrollR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px * 7);
+  }
+}
+
+
+@keyframes scrollL {
+  0% {
+    transform: translateX(-250px * 7); //Start at the end of the div to scroll to the beginning
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.slider {
+  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 50%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.sliderR .slide-trackR {
+  animation: scrollR 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.sliderL .slide-trackL {
+  animation: scrollL 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+
+.slideword1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(245, 130, 49);
+}
+
+
+.slideword2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(136,138,139);
+}
+
+
+
+.slideword3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(108, 174, 140);
+}
