@@ -3,10 +3,12 @@ const stripe = require('stripe')(process.env.REACT_APP_STRIPE_SECRET_KEY);
 export default async function handler(req, res) {
   const { item } = req.body;
 
-  console.log('req => ', req);
+  console.log('req => ', req.priceid);
   console.log('body => ',req.body);
   console.log('params => ',req.params);
   console.log('item => ', item);
+
+
   if (req.method === 'POST') {
     try {
       // Create Checkout Sessions from body params.
@@ -15,6 +17,7 @@ export default async function handler(req, res) {
           {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
             price: 'price_1NWhEME6UDTU781cnCRTEdy4',
+            //price: req.body,
             quantity: 1,
           },
         ],

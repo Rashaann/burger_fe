@@ -8,7 +8,13 @@ import Router from 'next/router';
 import Head from 'next/head';
 
 
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
+
 function Home() {
+
+  
 
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -16,6 +22,8 @@ function Home() {
 
   useEffect(()=> {
     setIsLoaded(true);
+    AOS.init();
+    AOS.refresh();
   },[]);
   //PB -> GET CONTINIOUSLY window.scrollY VALUE
   
@@ -28,6 +36,8 @@ function Home() {
         <meta name="description" content="Les meilleurs burgers de Paris" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://res.cloudinary.com/dldeqai4u/image/upload/v1689252448/burger/burger_logo_ylhaaq.png" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         {/* <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossOrigin="anonymous"/> */}
       </Head>
@@ -44,7 +54,7 @@ function Home() {
           </div>
         </div>
         {/* <button onClick={() => handleScroll()} >CLICK ME!</button> */}
-        <div class=" slider sliderR">
+        <div class="slider sliderR">
           <div class="slide-trackR">
             <div class="slide slideword1">
               authenticité
@@ -137,7 +147,7 @@ function Home() {
           </div>
      
         </div>
-        <div className={`slideRight ${styles.about}`}>
+        <div className={styles.about} data-aos="fade-right">
           <div>
             <img src='burger6.png' width={370} style={{borderRadius: 20}} />
           </div>
@@ -154,10 +164,31 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* <button onClick={() => handleScroll()} >CLICK ME!</button> */}
+
+
+        {/* EXAMPLES OF ANIMATIONS WITH AOS:
+        <div class="item" data-aos="fade-up">1</div>
+        <div class="item" data-aos="fade-down">2</div>
+        <div class="item" data-aos="fade-right">3</div>
+        <div class="item" data-aos="fade-left">4</div>
+
+        <div class="item" data-aos="zoom-in">5</div>
+        <div class="item" data-aos="zoom-out">6</div>
+
+        <div class="item" data-aos="slide-up">7</div>
+
+        <div class="item" data-aos="flip-up">8</div>
+        <div class="item" data-aos="flip-down">9</div>
+        <div class="item" data-aos="flip-right">10</div>
+        <div class="item" data-aos="flip-left">11</div> */}
+
+
+
+
+
 
         <div className={styles.specialOffersContainer}>
-          <div className={`${styles.specialOffers} slideRight`}>
+          <div className={styles.specialOffers} data-aos="fade-right">
             <div>
               <img src='brgr7.jpeg' width={450} style={{borderRadius: 15}} />
             </div>
@@ -175,7 +206,7 @@ function Home() {
             </div>
           </div>
           
-          <div className={`${styles.specialOffers} slideRight`}>
+          <div className={styles.specialOffers} data-aos="fade-right">
             <div>
               <img src='brgr12.jpg' width={450} style={{borderRadius: 15}} />
             </div>
@@ -195,6 +226,7 @@ function Home() {
         </div>
         <Footer />
       </div>
+  
     </>
   );
 }

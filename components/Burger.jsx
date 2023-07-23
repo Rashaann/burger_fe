@@ -8,7 +8,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { loadStripe } from '@stripe/stripe-js';
-import axios from 'axios';
+
+
+import { addStripePrice } from '../reducers/burgers';
+import { useDispatch } from 'react-redux';
+import handler from '../pages/api/checkout_sessions';
+
 
 export default function Burger() {
 
@@ -16,6 +21,10 @@ export default function Burger() {
   const [isLoaded, setIsLoaded] = useState(false);
   const router = useRouter();
   const id = router.query.id;
+
+
+
+  const dispatch = useDispatch();
 
 
   useEffect(() => {
@@ -47,24 +56,23 @@ export default function Burger() {
   }, []);
 
 
-  const createCheckOutSession = async () => {
-    const publishableKey = String(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
-    const stripePromise = loadStripe(publishableKey);
-    const createCheckOutSession = async () => {
-        setLoading(true);
-        const stripe = await stripePromise;
-        const checkoutSession = await axios.post('/api/create-stripe-session', {
-        item: selectedBurger.stripeId,
-        });
-        const result = await stripe.redirectToCheckout({
-        sessionId: checkoutSession.data.id,
-        });
-        if (result.error) {
-        alert(result.error.message);
-        }
-        setLoading(false);
-    };
+    const handleStripeId = () => {
+
+
+        fetch('http://localhost:3001/api/checkout_sessions', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ 
+                    stripeid: selectedBurger.stripeId,
+                  }),
+        }).then(response => response.json())
+          .then(data => {
+            console.log('DATAAAAA => ',data);
+          });
     }
+
+
+
 
 
 
@@ -101,12 +109,12 @@ export default function Burger() {
                 </div>
                 <div className={styles.btnsContainer}>
                     <button className={styles.cartBtn}>AJOUTER AU PANIER</button>
-                    <form action="/api/checkout_sessions" method="POST">
+                    <form action="/api/checkout_sessions" method="POST" body="selectedBurger.stripeId" >
                         <button
                             className={styles.buyBtn}
                             type="submit"
                             role="link"
-                            onClick={createCheckOutSession}
+                            // onClick={() => handleStripeId()}
                         >
                             ACHETER
                         </button>
