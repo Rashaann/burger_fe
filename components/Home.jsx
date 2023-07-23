@@ -25,7 +25,6 @@ function Home() {
     AOS.init();
     AOS.refresh();
   },[]);
-  //PB -> GET CONTINIOUSLY window.scrollY VALUE
   
 
 
@@ -53,7 +52,8 @@ function Home() {
             </h1>
           </div>
         </div>
-        {/* <button onClick={() => handleScroll()} >CLICK ME!</button> */}
+
+
         <div class="slider sliderR">
           <div class="slide-trackR">
             <div class="slide slideword1">
@@ -147,7 +147,7 @@ function Home() {
           </div>
      
         </div>
-        <div className={styles.about} data-aos="fade-right">
+        <div className={styles.about} data-aos="fade" data-aos-duration="2000">
           <div>
             <img src='burger6.png' width={370} style={{borderRadius: 20}} />
           </div>
@@ -165,28 +165,6 @@ function Home() {
           </div>
         </div>
 
-
-        {/* EXAMPLES OF ANIMATIONS WITH AOS:
-        <div class="item" data-aos="fade-up">1</div>
-        <div class="item" data-aos="fade-down">2</div>
-        <div class="item" data-aos="fade-right">3</div>
-        <div class="item" data-aos="fade-left">4</div>
-
-        <div class="item" data-aos="zoom-in">5</div>
-        <div class="item" data-aos="zoom-out">6</div>
-
-        <div class="item" data-aos="slide-up">7</div>
-
-        <div class="item" data-aos="flip-up">8</div>
-        <div class="item" data-aos="flip-down">9</div>
-        <div class="item" data-aos="flip-right">10</div>
-        <div class="item" data-aos="flip-left">11</div> */}
-
-
-
-
-
-
         <div className={styles.specialOffersContainer}>
           <div className={styles.specialOffers} data-aos="fade-right">
             <div>
@@ -201,7 +179,7 @@ function Home() {
                 <p className={styles.price}>10,00€</p>
                 <button
                   className={styles.seeMenuBtn}
-                  onClick={() => Router.push('/menu')}>VOIR LE MENU</button>
+                  onClick={() => Router.push('/specialOffers')}>PLUS D'OFFRES</button>
               </div>
             </div>
           </div>
@@ -219,7 +197,7 @@ function Home() {
                 <p className={styles.price}>9,00€</p>
                 <button
                   className={styles.seeMenuBtn}
-                  onClick={() => Router.push('/menu')}>VOIR LE MENU</button>
+                  onClick={() => Router.push('/specialOffers')}>PLUS D'OFFRES</button>
               </div>
             </div>
           </div>
