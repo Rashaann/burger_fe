@@ -147,6 +147,8 @@ function Home() {
           </div>
      
         </div>
+
+
         <div className={styles.about} data-aos="fade" data-aos-duration="2000">
           <div>
             <img src='burger6.png' width={370} style={{borderRadius: 20}} />
@@ -165,6 +167,20 @@ function Home() {
           </div>
         </div>
 
+
+        <div className={styles.menu}>
+          <div className={styles.menuContent} data-aos="fade-zoom-in" data-aos-delay="1000">
+            <div>
+              <h2 className={styles.h2}>Une petite (ou grande) faim?</h2>
+              <p className={styles.textMenu}>Au menu, un panel de burgers savoureux et autres spécialités américaines pour toutes les envies avec options végétariennes et vegan. Des plats à partager en famille ou entre amis dans une ambiance chaleureuse. Côté expérience, la cuisine ouverte et le show cooking réservent des moments de partage inoubliables.  </p>
+            </div>
+            <button
+              className={styles.seeMenuBtn}
+              onClick={() => Router.push('/menu')}>VOIR LE MENU</button>
+          </div>
+        </div>
+
+
         <div className={styles.specialOffersContainer}>
           <div className={styles.specialOffers} data-aos="fade-right">
             <div>
@@ -178,7 +194,7 @@ function Home() {
                 <p className={styles.text}>Bun sésame (ou sans gluten +1€), artisanal steak haché de bœuf maturé (ou beyond meat +2€), cébette, sauce teriyaki maison, chou mariné, shichimi togarashi (mélange 7 épices), mayo japonaise.</p>
                 <p className={styles.price}>10,00€</p>
                 <button
-                  className={styles.seeMenuBtn}
+                  className={styles.seeMoreBtn}
                   onClick={() => Router.push('/specialOffers')}>PLUS D'OFFRES</button>
               </div>
             </div>
@@ -196,7 +212,7 @@ function Home() {
                 <p className={styles.text}>Ce burger est un hommage culinaire au pays niçois et à sa gastronomie.</p>
                 <p className={styles.price}>9,00€</p>
                 <button
-                  className={styles.seeMenuBtn}
+                  className={styles.seeMoreBtn}
                   onClick={() => Router.push('/specialOffers')}>PLUS D'OFFRES</button>
               </div>
             </div>

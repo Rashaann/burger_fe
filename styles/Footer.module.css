@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100vw;
-    min-height: 45vh;
+    min-height: 65vh;
 }
 
 
@@ -11,11 +11,13 @@
     color: rgb(245, 130, 49);
     font-weight: bold;
     height: 7vh;
+    cursor: auto;
 }
 
 .title {
     color: rgb(245, 130, 49);
     height: 7vh;
+    cursor: auto;
 }
 
 
@@ -42,6 +44,7 @@
 .signature {
     display: flex;
     justify-content: center;
+    cursor: auto;
 }
 
 .text {
@@ -49,6 +52,7 @@
     align-items: center;
     cursor: pointer;
     height: 30px;
+    cursor: auto;
 }
 
 
@@ -137,6 +141,7 @@
 }
 
 .subscribeBtn {
+    transition: all 0.7s ease-in;
     background-color: rgb(245, 130, 49);
     color: white;
     width: 17vw;
@@ -154,5 +159,5 @@
     border-radius: 20px;
 
 
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-out;
 }

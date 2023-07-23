@@ -13,7 +13,7 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.subContainer}>
           <h3 className={styles.logo}>BURGER</h3>
-          <p>Les meilleurs burgers de Paris</p>
+          <p style={{cursor: 'auto'}}>Les meilleurs burgers de Paris</p>
           <div className={styles.subContainer2}>
             <p className={styles.text}><AiFillFacebook size={25} color='rgb(245, 130, 49)' /> facebook</p>
             <p className={styles.text}><AiOutlineTwitter size={30} color='rgb(245, 130, 49)' /> twitter</p>
@@ -24,7 +24,7 @@ function Footer() {
 
         <div className={styles.subContainer}>
           <h3 className={styles.title}>Contacts</h3>
-          <p>Envie de nous poser vos questions? Contactez-nous!</p>
+          <p style={{cursor: 'auto'}}>Envie de nous poser vos questions? Contactez-nous!</p>
           <div className={styles.subContainer2}>
             <p className={styles.text}><GiPositionMarker size={25} color='rgb(245, 130, 49)' />Position</p>
             <p className={styles.text}><BsFillPhoneFill size={25} color='rgb(245, 130, 49)' />0612345678</p>
