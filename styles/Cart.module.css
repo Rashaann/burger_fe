@@ -1,161 +1,345 @@
-.body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    width: 100vw;
-    cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689200660/burger/icons8-burger-64_ko0njq.png), auto;
-  }
+@media only screen and (min-width: 900px){
+    /* COMPUTERS */
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 130px;
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        width: 100vw;
+        cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689200660/burger/icons8-burger-64_ko0njq.png), auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+
+    .subContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 50vh;
+    }
+
+
+
+    /* BTN PART */
+    .btnContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70vw;
+        height: 20vh;
+    }
+
+
+    .clearCartBtn {
+        transition: 0.7s ease-out;
+        width: 20vw;
+        height: 7vh;
+
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .clearCartBtn:hover {
+        width: 20vw;
+        height: 7vh;
+
+        background-color: black;
+        color: white;
+        transition: 0.7s ease-in;
+        cursor: pointer;
+    }
+
+
+
+
+    .buyBtn {
+        width: 20vw;
+        height: 7vh;
+
+        color: white;
+        border: none;
+        background-color: rgb(245, 130, 49);
+        transition: all 0.7s ease-in;
+        cursor: pointer;
+    }
+
+
+    .buyBtn:hover {
+        width: 20vw;
+        height: 7vh;
+
+        color: rgb(245, 130, 49);
+        border: 1px solid rgb(245, 130, 49);
+        background-color: white;
+        transition: all 0.7s ease-out;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+    /* ITEMS STYLE */
+    .burgerContainer {
+        display: flex;
+        align-items: center;
+        width: 60vw;
+        min-height: 35vh;
+        border-bottom: 1px solid rgb(245, 130, 49);
+    }
+
+
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 300px;
+    }
+
+
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25vw;
+
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+
+
+    .name {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .price {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .burgerText {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(245, 130, 49);
+    }
+
+    .totalPrice {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(245, 130, 49);
+    }
 }
 
 
-.subContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 40px;
+@media only screen and (max-width: 900px){
+    /*Tablets [601px -> 1200px]*/
 }
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    min-height: 50vh;
+  
+  
+@media only screen and (max-width: 600px){
+    /*Big smartphones [426px -> 600px]*/
 }
 
 
+@media only screen and (max-width: 425px){
+    /*Small smartphones [325px -> 425px]*/
 
-/* BTN PART */
-.btnContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70vw;
-    height: 20vh;
-}
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        width: 100vw;
+        cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689200660/burger/icons8-burger-64_ko0njq.png), auto;
+    }
 
-
-.clearCartBtn {
-    transition: 0.7s ease-out;
-    width: 20vw;
-    height: 7vh;
-
-    border: 1px solid black;
-    background-color: white;
-    cursor: pointer;
-}
-
-.clearCartBtn:hover {
-    width: 20vw;
-    height: 7vh;
-
-    background-color: black;
-    color: white;
-    transition: 0.7s ease-in;
-    cursor: pointer;
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 130px;
+    }
 
 
+    .subContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 40px;
+    }
 
-
-.buyBtn {
-    width: 20vw;
-    height: 7vh;
-
-    color: white;
-    border: none;
-    background-color: rgb(245, 130, 49);
-    transition: all 0.7s ease-in;
-    cursor: pointer;
-}
-
-
-.buyBtn:hover {
-    width: 20vw;
-    height: 7vh;
-
-    color: rgb(245, 130, 49);
-    border: 1px solid rgb(245, 130, 49);
-    background-color: white;
-    transition: all 0.7s ease-out;
-    cursor: pointer;
-}
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 50vh;
+    }
 
 
 
+    /* BTN PART */
+    .btnContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 70vw;
+        height: 20vh;
+    }
+
+
+    .clearCartBtn {
+        transition: 0.7s ease-out;
+        width: 50vw;
+        height: 7vh;
+
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .clearCartBtn:hover {
+        width: 50vw;
+        height: 7vh;
+
+        background-color: black;
+        color: white;
+        transition: 0.7s ease-in;
+        cursor: pointer;
+    }
+
+
+
+
+    .buyBtn {
+        width: 50vw;
+        height: 7vh;
+
+        color: white;
+        border: none;
+        background-color: rgb(245, 130, 49);
+        transition: all 0.7s ease-in;
+        cursor: pointer;
+    }
+
+
+    .buyBtn:hover {
+        width: 50vw;
+        height: 7vh;
+
+        color: rgb(245, 130, 49);
+        border: 1px solid rgb(245, 130, 49);
+        background-color: white;
+        transition: all 0.7s ease-out;
+        cursor: pointer;
+    }
 
 
 
 
 
 
-/* ITEMS STYLE */
-.burgerContainer {
-    display: flex;
-    align-items: center;
-    width: 60vw;
-    min-height: 35vh;
-    border-bottom: 1px solid rgb(245, 130, 49);
-}
 
 
-.imageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 300px;
-}
+
+    /* ITEMS STYLE */
+    .burgerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        min-height: 65vh;
+        border-bottom: 1px solid rgb(245, 130, 49);
+    }
 
 
-.infosContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 25vw;
-
-    padding-top: 25px;
-    padding-left: 25px;
-}
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 250px;
+    }
 
 
-.name {
-    font-size: 35px;
-    font-weight: bold;
-}
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90vw;
 
-.price {
-    font-size: 30px;
-    font-weight: bold;
-}
+        padding-top: 25px;
+        padding-left: 25px;
+    }
 
-.burgerText {
-    font-size: 20px;
-}
 
-.text {
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(245, 130, 49);
-}
+    .name {
+        font-size: 30px;
+        font-weight: bold;
+    }
 
-.totalPrice {
-    font-size: 40px;
-    font-weight: bold;
-    color: rgb(245, 130, 49);
+    .price {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .burgerText {
+        font-size: 20px;
+        width: 90vw;
+    }
+
+    .text {
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(245, 130, 49);
+    }
+
+    .totalPrice {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(245, 130, 49);
+    }
 }
