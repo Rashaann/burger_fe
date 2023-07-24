@@ -28,10 +28,13 @@ export const burgersSlice = createSlice({
             } else {
                 state.value.cart.push(action.payload);
             }
+        },
+        clearCart: (state, action) => {
+            state.value.cart = [];
         }
     },
 });
 
 
-export const { addStripePrice, addToCart } = burgersSlice.actions;
+export const { addStripePrice, addToCart, clearCart } = burgersSlice.actions;
 export default burgersSlice.reducer;
