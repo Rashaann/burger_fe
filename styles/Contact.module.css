@@ -1,180 +1,389 @@
-.body {
-    cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
+@media only screen and (min-width: 900px){
+    /* COMPUTERS */
+
+    .body {
+        cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+
+
+
+    /* FORM PART */
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:  rgb(245, 130, 49);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 70vh;
+        padding-left: 30px;
+    }
+
+    .formTitle {
+        color: white;
+        padding-left: 20px;
+
+        cursor: auto;
+    }
+
+    .formText {
+        color: white;
+        padding-left: 30px;
+
+        cursor: auto;
+    }
+
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75vw;
+    }
+
+
+    .formSubTitle {
+        
+        width: 45vw;
+
+        color: white;
+        font-size: 22px;
+    }
+
+    .inputs {
+        width: 45vw;
+        height: 45px;
+        font-size: 15px;
+
+        cursor: auto;
+        color: rgb(245, 130, 49);
+    }
+
+
+    .mail {
+        width: 45vw;
+        height: 20vh;
+
+        color: rgb(245, 130, 49);
+    }
+
+    .submitBtn {
+        width: 45vw;
+        height: 7vh;
+        border: 1px solid white;
+        background-color: rgb(245, 130, 49);
+
+        color: white;
+        font-size: 20px;
+
+        transition: all 0.7s ease-in;
+    }
+
+
+    .submitBtn:hover {
+        width: 45vw;
+        height: 7vh;
+        border: 1px solid rgb(245, 130, 49);
+        background-color: white;
+
+        color: rgb(245, 130, 49);
+        font-size: 20px;
+
+        transition: all 0.7s ease-out;
+    }
+
+
+
+    /* SUPP. INFOS PART */
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 100vw;
+        height: 100vh;
+
+        color: rgb(245, 130, 49);
+    }
+
+
+    .infosTitle {
+        padding-left: 20px;
+        cursor: auto;
+    }
+
+    .infosSubTitle {
+        padding-left: 20px;
+    }
+
+    .infosText {
+        padding-left: 30px;
+    }
+
+
+
+
+
+    .infosContent {
+        display: flex;
+        width: 100vw;
+        height: 70vh;
+    }
+
+
+    .infosLeftPart {
+        height: 100%;
+        width: 50%;
+    }
+
+    .leftSubContainer {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        padding-left: 20px;
+    }
+
+    .infosRightPart {
+        height: 100%;
+        width: 50%;
+    }
+
+
+    .rightSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 70%;
+    }
+
+    .infosRightText {
+        width: 15vw;
+    }
 }
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 130px;
+
+
+@media only screen and (max-width: 900px){
+    /*Tablets [601px -> 1200px]*/
+}
+  
+  
+@media only screen and (max-width: 600px){
+    /*Big smartphones [426px -> 600px]*/
 }
 
 
+@media only screen and (max-width: 425px){
+    /*Small smartphones [325px -> 425px]*/
+    .body {
+        cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
+    }
 
 
-/* FORM PART */
-
-.formContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color:  rgb(245, 130, 49);
-    width: 100vw;
-    height: 100vh;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    height: 70vh;
-    padding-left: 30px;
-}
-
-.formTitle {
-    color: white;
-    padding-left: 20px;
-
-    cursor: auto;
-}
-
-.formText {
-    color: white;
-    padding-left: 30px;
-
-    cursor: auto;
-}
-
-
-.label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75vw;
-}
-
-
-.formSubTitle {
-    
-    width: 45vw;
-
-    color: white;
-    font-size: 22px;
-}
-
-.inputs {
-    width: 45vw;
-    height: 45px;
-    font-size: 15px;
-
-    cursor: auto;
-    color: rgb(245, 130, 49);
-}
-
-
-.mail {
-    width: 45vw;
-    height: 20vh;
-
-    color: rgb(245, 130, 49);
-}
-
-.submitBtn {
-    width: 45vw;
-    height: 7vh;
-    border: 1px solid white;
-    background-color: rgb(245, 130, 49);
-
-    color: white;
-    font-size: 20px;
-
-    transition: all 0.7s ease-in;
-}
-
-
-.submitBtn:hover {
-    width: 45vw;
-    height: 7vh;
-    border: 1px solid rgb(245, 130, 49);
-    background-color: white;
-
-    color: rgb(245, 130, 49);
-    font-size: 20px;
-
-    transition: all 0.7s ease-out;
-}
-
-
-
-/* SUPP. INFOS PART */
-.infosContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    width: 100vw;
-    height: 100vh;
-
-    color: rgb(245, 130, 49);
-}
-
-
-.infosTitle {
-    padding-left: 20px;
-    cursor: auto;
-}
-
-.infosSubTitle {
-    padding-left: 20px;
-}
-
-.infosText {
-    padding-left: 30px;
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 120px;
+    }
 
 
 
 
+    /* FORM PART */
 
-.infosContent {
-    display: flex;
-    width: 100vw;
-    height: 70vh;
-}
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:  rgb(245, 130, 49);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 70vh;
+    }
+
+    .formTitle {
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        cursor: auto;
+    }
+
+    .formText {
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        cursor: auto;
+    }
 
 
-.infosLeftPart {
-    height: 100%;
-    width: 50%;
-}
-
-.leftSubContainer {
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    padding-left: 20px;
-}
-
-.infosRightPart {
-    height: 100%;
-    width: 50%;
-}
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75vw;
+    }
 
 
-.rightSubContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 70%;
-}
+    .formSubTitle {
+        
+        width: 65vw;
 
-.infosRightText {
-    width: 15vw;
+        color: white;
+        font-size: 22px;
+    }
+
+    .inputs {
+        width: 65vw;
+        height: 45px;
+        font-size: 15px;
+
+        cursor: auto;
+        color: rgb(245, 130, 49);
+    }
+
+
+    .mail {
+        width: 65vw;
+        height: 20vh;
+
+        color: rgb(245, 130, 49);
+    }
+
+    .submitBtn {
+        width: 65vw;
+        height: 7vh;
+        border: 1px solid white;
+        background-color: rgb(245, 130, 49);
+
+        color: white;
+        font-size: 20px;
+
+        transition: all 0.7s ease-in;
+    }
+
+
+    .submitBtn:hover {
+        width: 65vw;
+        height: 7vh;
+        border: 1px solid rgb(245, 130, 49);
+        background-color: white;
+
+        color: rgb(245, 130, 49);
+        font-size: 20px;
+
+        transition: all 0.7s ease-out;
+    }
+
+
+
+    /* SUPP. INFOS PART */
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 100vw;
+        min-height: 100vh;
+
+        color: rgb(245, 130, 49);
+    }
+
+
+    .infosTitle {
+        padding-left: 20px;
+        cursor: auto;
+    }
+
+    .infosSubTitle {
+        padding-left: 20px;
+        padding-top: 40px;
+        width: 90vw;
+    }
+
+    .infosText {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+    .infosContent {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 70vh;
+    }
+
+
+    .infosLeftPart {
+        width: 100vw;
+        min-height: 70vh;
+        padding-top: 25px;
+    }
+
+    .leftSubContainer {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        width: 100vw;
+        padding-left: 20px;
+    }
+
+    .infosRightPart {
+        height: 70vh;
+        width: 50vw;
+    }
+
+
+    .rightSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+        width: 100vw;
+    }
+
+    .infosRightText {
+        width: 45vw;
+    }
 }
