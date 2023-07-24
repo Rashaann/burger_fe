@@ -19,12 +19,12 @@ function Header() {
   });
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Burger | Les meilleurs burgers de Paris</title>
         <meta name="description" content="Les meilleurs burgers de Paris" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://res.cloudinary.com/dldeqai4u/image/upload/v1689252448/burger/burger_logo_ylhaaq.png" />
-      </Head>
+      </Head> */}
     
       <div className={styles.body}>
           <h1

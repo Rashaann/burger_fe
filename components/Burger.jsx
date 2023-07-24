@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 import { loadStripe } from '@stripe/stripe-js';
 
 
-import { addStripePrice } from '../reducers/burgers';
+import { addStripePrice, addToCart } from '../reducers/burgers';
 import { useDispatch } from 'react-redux';
 import handler from '../pages/api/checkout_sessions';
 
@@ -35,6 +35,7 @@ export default function Burger() {
         data.list.map((el) => {
             console.log(router.query)
             if(JSON.stringify(el.id) === JSON.stringify(router.query.burger)){
+              console.log(el);
                 setSelectedBurger(el);
                 setIsLoaded(true);
             }
@@ -69,6 +70,11 @@ export default function Burger() {
           .then(data => {
             console.log('DATAAAAA => ',data);
           });
+    }
+
+    const handleAdd2Cart = () => {
+      dispatch(addToCart({selectedBurger, quantity: 1}));
+      console.log('ADDED!')
     }
 
 
@@ -106,7 +112,12 @@ export default function Burger() {
                     <p className={styles.price}>{selectedBurger.price}€</p>
                 </div>
                 <div className={styles.btnsContainer}>
-                    <button className={styles.cartBtn}>AJOUTER AU PANIER</button>
+                    <button
+                      className={styles.cartBtn}
+                      onClick={() => handleAdd2Cart()}
+                      >
+                        AJOUTER AU PANIER
+                    </button>
                     <form action="/api/checkout_sessions" method="POST" body="selectedBurger.stripeId" >
                         <button
                             className={styles.buyBtn}
@@ -120,7 +131,7 @@ export default function Burger() {
                 </div>
             </div>:
             <div className={styles.container}>
-                <div class="loader3">
+                <div className="loader3">
                     <span></span>
                     <span></span>
                 </div>
