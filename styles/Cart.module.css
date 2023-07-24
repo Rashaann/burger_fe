@@ -239,6 +239,7 @@
         border: 1px solid black;
         background-color: white;
         cursor: pointer;
+        color: black;
     }
 
     .clearCartBtn:hover {
