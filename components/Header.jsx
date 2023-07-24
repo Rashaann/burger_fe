@@ -27,7 +27,7 @@ function Header() {
           >
             <div style={{ position: "relative" }}>
               <AiOutlineShoppingCart size={25} />
-              <span style={{display:'flex', position: "absolute", justifyContent: 'center', alignItems: 'center', fontSize: 15, border:'1px solid rgb(245, 130, 49)', width: 20, height: 20, borderRadius: 10, color: 'rgb(245, 130, 49)' }}>{nbItems.reduce((accumulator, currentValue) => accumulator + currentValue,0)}</span>
+              <span style={{display:'flex', position: "absolute", justifyContent: 'center', alignItems: 'center', fontSize: 15, width: 20, height: 20, borderRadius: 10, color: 'rgb(245, 130, 49)', paddingLeft: 25, paddingBottom: 20 }}>{nbItems.reduce((accumulator, currentValue) => accumulator + currentValue,0)}</span>
             </div>
           </div>)
     } else {
