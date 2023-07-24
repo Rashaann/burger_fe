@@ -38,8 +38,8 @@ function Footer() {
           <div className={styles.subContainer2}>
             {/* <input placeholder="Enter your email" className={styles.input2} /> */}
             <div className={styles.form}>
-              <input type="text" name="text" autocomplete="off" required />
-              <label for="text" className={styles.labelName}>
+              <input type="text" name="text" autoComplete="off" required />
+              <label htmlFor="text" className={styles.labelName}>
                 <span className={styles.contentName}>
                   Adresse email
                 </span>

@@ -51,94 +51,94 @@ function Home() {
         </div>
 
 
-        <div class="slider sliderR">
-          <div class="slide-trackR">
-            <div class="slide slideword1">
+        <div className="slider sliderR">
+          <div className="slide-trackR">
+            <div className="slide slideword1">
               authenticité
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               originalité
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               générosité
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               variété
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               goût
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               savoir-faire
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               saveurs
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               authenticité
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               originalité
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               générosité
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               variété
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               goût
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               savoir-faire
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               saveurs
             </div>
           </div>
         </div>
-        <div class=" sliderL slider ">
-          <div class="slide-trackL">
-            <div class="slide slideword3">
+        <div className=" sliderL slider ">
+          <div className="slide-trackL">
+            <div className="slide slideword3">
               saveurs
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               savoir-faire
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               goût
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               variété
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               générosité
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               originalité
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               authenticité
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               saveurs
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               savoir-faire
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               goût
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               variété
             </div>
-            <div class="slide slideword1">
+            <div className="slide slideword1">
               générosité
             </div>
-            <div class="slide slideword3">
+            <div className="slide slideword3">
               originalité
             </div>
-            <div class="slide slideword2">
+            <div className="slide slideword2">
               authenticité
             </div>
           </div>
