@@ -285,7 +285,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../public/burger3.png');
+    background-image: url('../public/burger3_resized.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
