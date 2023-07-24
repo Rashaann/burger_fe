@@ -27,7 +27,14 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Oswald+Condensed:wght@300&display=swap');
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 
 
 //ANIMATIONS -> GENERAL
