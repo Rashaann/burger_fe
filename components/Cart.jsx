@@ -53,7 +53,7 @@ function Cart() {
     totalPrice.push(total);
 
     return (
-      <div key={i} className={styles.burgerContainer} data-aos="fade-in" >
+      <div key={i} className={styles.burgerContainer} data-aos="fade" data-aos-duration="1000" >
         <div className={styles.imageContainer}>
           <img src={el.selectedBurger.image} width={200} height={200} />
         </div>
