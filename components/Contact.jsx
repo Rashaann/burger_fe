@@ -53,7 +53,7 @@ export default function Contact() {
 
         {isLoaded?
         <div className={styles.container}>
-          <div className={styles.formContainer}>
+          <div className={styles.formContainer} data-aos="fade-right">
             <div>
               <h2 className={styles.formTitle}>En cas d'interrogations, contactez-nous via le formulaire ci-dessous:</h2>
               <p className={styles.formText}>Tous les champs doivent obligatoirement être remplis. Dans le cas contraire, nous ne serons pas en mesure de vous répondre.</p>
@@ -74,7 +74,7 @@ export default function Contact() {
               <button className={styles.submitBtn} type="submit">Envoyer</button>  
             </form>
           </div>
-          <div className={styles.infosContainer}>
+          <div className={styles.infosContainer} data-aos="fade-left">
             <div>
               <h2 className={styles.infosTitle}>Autre solution:</h2>
               <p className={styles.infosText}>Dans le cas où vous voudriez nous contacter autrement que via un formulaire, nous avons mis à votre disposition plusieurs voies de communications!</p>
