@@ -95,7 +95,7 @@ function Cart() {
             <p className={styles.text}  data-aos="fade-left">Total: {totalPrice.reduce(
               (accumulator, currentValue) => accumulator + currentValue,
               0
-            )} euros</p>
+            ).toFixed(2)} euros</p>
             <div className={styles.btnContainer}>
               <button
                 className={styles.clearCartBtn}
