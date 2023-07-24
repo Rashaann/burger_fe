@@ -271,9 +271,7 @@
 
 @media only screen and (max-width: 425px){
   /*Small smartphones [325px -> 425px]*/
-  .html{
-    width: 100%;
-  }
+  
   .body {
     display: flex;
     flex-direction: column;
@@ -290,7 +288,7 @@
     align-items: center;
     background-image: url('../public/burger3.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     width: 100vw;
