@@ -148,7 +148,7 @@ function Home() {
 
         <div className={styles.about} data-aos="fade" data-aos-duration="2000">
           <div>
-            <img src='burger6.png' width={370} style={{borderRadius: 20}} />
+            <img src='burger6.png' className={styles.aboutImage} />
           </div>
           <div className={styles.aboutRightPartContainer}>
             <div className={styles.aboutHeader}>A PROPOS</div>
@@ -166,7 +166,7 @@ function Home() {
 
 
         <div className={styles.menu}>
-          <div className={styles.menuContent} data-aos="fade-zoom-in" data-aos-delay="1000">
+          <div className={styles.menuContent} data-aos="fade-zoom-in" data-aos-delay="300">
             <div>
               <h2 className={styles.h2}>Une petite (ou grande) faim?</h2>
               <p className={styles.textMenu}>Au menu, un panel de burgers savoureux et autres spécialités américaines pour toutes les envies avec options végétariennes et vegan. Des plats à partager en famille ou entre amis dans une ambiance chaleureuse. Côté expérience, la cuisine ouverte et le show cooking réservent des moments de partage inoubliables.  </p>
@@ -181,7 +181,7 @@ function Home() {
         <div className={styles.specialOffersContainer}>
           <div className={styles.specialOffers} data-aos="fade-right">
             <div>
-              <img src='brgr7.jpeg' width={450} style={{borderRadius: 15}} />
+              <img src='brgr7.jpeg' className={styles.specialOffersImage} />
             </div>
 
             <div className={styles.specialOffersRightPartContainer}>
@@ -199,7 +199,7 @@ function Home() {
           
           <div className={styles.specialOffers} data-aos="fade-right">
             <div>
-              <img src='brgr12.jpg' width={450} style={{borderRadius: 15}} />
+              <img src='brgr12.jpg' className={styles.specialOffersImage}/>
             </div>
 
             <div className={styles.specialOffersRightPartContainer}>
