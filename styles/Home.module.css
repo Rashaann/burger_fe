@@ -286,13 +286,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../public/burger3_resized.png');
+    background-image: url('../public/burger3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     width: 100vw;
     height: 100vh;
+    z-index: -1;
   }
 
 
