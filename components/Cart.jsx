@@ -50,7 +50,7 @@ function Cart() {
 
   let displayCart = cart.map((el, i) => {
     let total = el.quantity*Number(el.selectedBurger.price);
-    totalPrice.push(total);
+    totalPrice.push(Number(total.toFixed(2)));
 
     return (
       <div key={i} className={styles.burgerContainer} data-aos="fade" data-aos-duration="1000" >
@@ -64,11 +64,11 @@ function Cart() {
         </div>
         <div>
           <p className={styles.burgerText}>Total:</p>
-          <p className={styles.totalPrice}>{total}€</p>
+          <p className={styles.totalPrice}>{total.toFixed(2)}€</p>
         </div>
       </div>
     )
-  })
+  });
 
 
   return (

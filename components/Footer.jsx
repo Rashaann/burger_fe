@@ -94,7 +94,7 @@ function Footer() {
               aria-controls="panel2bh-content"
               id="panel2bh-header"
             >
-              <Typography sx={styles.title}>
+              <Typography className={styles.title}>
                 Contacts
               </Typography>
             </AccordionSummary>
@@ -111,7 +111,7 @@ function Footer() {
               aria-controls="panel3bh-content"
               id="panel3bh-header"
             >
-              <Typography sx={styles.title}>
+              <Typography className={styles.title}>
                 Newsletter
               </Typography>
             </AccordionSummary>
