@@ -335,7 +335,8 @@
 
   .aboutRightPartContainer{
     width: 90vw;
-    height: 65vh;
+    height: 75vh;
+    padding-top: 20px;
   }
 
   .aboutHeader {
@@ -501,6 +502,7 @@
   .specialOffersRightPartContainer{
     width: 90vw;
     height: 65vh;
+    padding-top: 20px;
   }
 
   .specialOffersHeader {

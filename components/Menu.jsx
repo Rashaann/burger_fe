@@ -60,7 +60,12 @@ export default function Menu() {
         <Header />
 
         {isLoaded?
-        <div className={styles.container}>{dispItems}</div>:
+        <div className={styles.subBody}>
+          <h2 className={styles.subTitle}>Nos burgers</h2>
+          <div className={styles.container}>
+            {dispItems}
+          </div>
+        </div>:
         <div className={styles.container}>
           <div className="loader3">
             <span></span>
