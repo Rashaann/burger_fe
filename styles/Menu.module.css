@@ -25,7 +25,7 @@
         min-height: 100vh;
     }
 
-    .link {
+    .link1 {
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -34,6 +34,43 @@
         cursor: pointer;
         width: 330px;
         height: 400px;
+    }
+
+
+    .link2 {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        width: 330px;
+        height: 400px;
+    }
+
+
+    .link1:hover {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        width: 330px;
+        height: 400px;
+        box-shadow: 5px 5px 5px gray;
+    }
+
+    .link2:hover {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        width: 330px;
+        height: 400px;
+        box-shadow: 5px 5px 5px rgb(245, 130, 49);
     }
 
 
@@ -102,7 +139,7 @@
         min-height: 100vh;
     }
 
-    .link {
+    .link1 {
         text-decoration: none;
         display: flex;
         justify-content: space-around;
@@ -111,6 +148,41 @@
         cursor: pointer;
         width: 180px;
         height: 280px;
+    }
+
+    .link2 {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        width: 180px;
+        height: 280px;
+    }
+
+    .link1:hover {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        width: 180px;
+        height: 280px;
+        box-shadow: 3px 3px 3px rgb(245, 130, 49);
+    }
+
+    .link2:hover {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        width: 180px;
+        height: 280px;
+        box-shadow: 3px 3px 3px gray;
     }
 
 

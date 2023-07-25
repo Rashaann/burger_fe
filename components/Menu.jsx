@@ -36,9 +36,15 @@ export default function Menu() {
 
   const dispItems = burgersList.map((el, i) => {
     let isMouseDown = styles.image;
+    let link;
+    if(i%2 === 0) {
+      link = styles.link2;
+    } else {
+      link = styles.link1;
+    }
     return (//agrandir image onHover
       <div key={i} data-aos="fade-right" className={styles.burgerContainer} onMouseOver={() => isMouseDown = styles.imageHovered} onMouseLeave={() => isMouseDown =styles.image}>
-        <Link href={{pathname:`/burgers/[burger]`, query: {id: el.id}}} as={`/burgers/${el.id}`} className={styles.link}>
+        <Link href={{pathname:`/burgers/[burger]`, query: {id: el.id}}} as={`/burgers/${el.id}`} className={link}>
           <img src={el.image} className={styles.image} />
           <p className={styles.title}>{el.name}</p>
         </Link>

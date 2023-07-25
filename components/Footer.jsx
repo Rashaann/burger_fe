@@ -73,7 +73,7 @@ function Footer() {
       <div className={styles.container}>
           <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className={styles.subContainer}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon color='error' />}
+              expandIcon={<ExpandMoreIcon color='warning' />}
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
@@ -90,7 +90,7 @@ function Footer() {
           </Accordion>
           <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} className={styles.subContainer}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon color='error' />}
+              expandIcon={<ExpandMoreIcon color='warning' />}
               aria-controls="panel2bh-content"
               id="panel2bh-header"
             >
@@ -107,7 +107,7 @@ function Footer() {
           </Accordion>
           <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} className={styles.subContainer}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon color='error' />}
+              expandIcon={<ExpandMoreIcon color='warning' />}
               aria-controls="panel3bh-content"
               id="panel3bh-header"
             >
