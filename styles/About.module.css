@@ -134,7 +134,7 @@
         background-image: url('../public/burger4.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
         width: 100vw;
         height: 70vh;
@@ -156,7 +156,7 @@
         background-image: url('../public/burger5.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
         width: 100vw;
         height: 70vh;
