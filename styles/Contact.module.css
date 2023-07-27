@@ -188,16 +188,395 @@
 
 @media only screen and (max-width: 900px){
     /*Tablets [601px -> 1200px]*/
+
+    .body {
+        cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 240px;
+    }
+
+
+
+
+    /* FORM PART */
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:  rgb(245, 130, 49);
+        width: 100vw;
+        height: 1000px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 700px;
+    }
+
+    .formTitle {
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        cursor: auto;
+    }
+
+    .formText {
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        cursor: auto;
+    }
+
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 750px;
+    }
+
+
+    .formSubTitle {
+        
+        width: 65vw;
+
+        color: white;
+        font-size: 22px;
+    }
+
+    .inputs {
+        width: 65vw;
+        height: 45px;;
+        font-size: 15px;
+
+        cursor: auto;
+        color: rgb(245, 130, 49);
+    }
+
+
+    .mail {
+        width: 65vw;
+        height: 200px;
+
+        color: rgb(245, 130, 49);
+    }
+
+    .submitBtn {
+        width: 55vw;
+        height: 60px;
+        border: 1px solid white;
+        background-color: rgb(245, 130, 49);
+
+        color: white;
+        font-size: 20px;
+
+        transition: all 0.7s ease-in;
+    }
+
+
+    .submitBtn:hover {
+        width: 55vw;
+        height: 60px;
+        border: 1px solid rgb(245, 130, 49);
+        background-color: white;
+
+        color: rgb(245, 130, 49);
+        font-size: 20px;
+
+        transition: all 0.7s ease-out;
+    }
+
+
+
+    /* SUPP. INFOS PART */
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 100vw;
+        min-height: 1000px;
+        padding-top: 40px;
+
+        color: rgb(245, 130, 49);
+    }
+
+
+    .infosTitle {
+        padding-left: 20px;
+        cursor: auto;
+    }
+
+    .infosSubTitle {
+        padding-left: 20px;
+        padding-top: 40px;
+        width: 90vw;
+    }
+
+    .infosText {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+    .infosContent {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 70vh;
+    }
+
+
+    .infosLeftPart {
+        width: 100vw;
+        min-height: 600px;
+        padding-top: 25px;
+    }
+
+    .leftSubContainer {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 100vw;
+        padding-left: 20px;
+    }
+
+    .infosRightPart {
+        height: 500px;
+        width: 100vw;
+    }
+
+
+    .rightSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+        width: 100vw;
+    }
+
+    .infosRightText {
+        width: 24vw;
+    }
 }
   
   
 @media only screen and (max-width: 600px){
     /*Big smartphones [426px -> 600px]*/
+    .body {
+        cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 170px;
+    }
+
+
+
+
+    /* FORM PART */
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:  rgb(245, 130, 49);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 70vh;
+    }
+
+    .formTitle {
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        cursor: auto;
+    }
+
+    .formText {
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        cursor: auto;
+    }
+
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75vw;
+    }
+
+
+    .formSubTitle {
+        
+        width: 65vw;
+
+        color: white;
+        font-size: 22px;
+    }
+
+    .inputs {
+        width: 65vw;
+        height: 45px;
+        font-size: 15px;
+
+        cursor: auto;
+        color: rgb(245, 130, 49);
+    }
+
+
+    .mail {
+        width: 65vw;
+        height: 20vh;
+
+        color: rgb(245, 130, 49);
+    }
+
+    .submitBtn {
+        width: 65vw;
+        height: 7vh;
+        border: 1px solid white;
+        background-color: rgb(245, 130, 49);
+
+        color: white;
+        font-size: 20px;
+
+        transition: all 0.7s ease-in;
+    }
+
+
+    .submitBtn:hover {
+        width: 65vw;
+        height: 7vh;
+        border: 1px solid rgb(245, 130, 49);
+        background-color: white;
+
+        color: rgb(245, 130, 49);
+        font-size: 20px;
+
+        transition: all 0.7s ease-out;
+    }
+
+
+
+    /* SUPP. INFOS PART */
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 100vw;
+        min-height: 100vh;
+
+        color: rgb(245, 130, 49);
+        padding-top: 50px;
+    }
+
+
+    .infosTitle {
+        padding-left: 20px;
+        cursor: auto;
+    }
+
+    .infosSubTitle {
+        padding-left: 20px;
+        padding-top: 40px;
+        width: 90vw;
+    }
+
+    .infosText {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+    .infosContent {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 70vh;
+    }
+
+
+    .infosLeftPart {
+        width: 100vw;
+        min-height: 60vh;
+        padding-top: 25px;
+    }
+
+    .leftSubContainer {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 100vw;
+        padding-left: 20px;
+    }
+
+    .infosRightPart {
+        height: 50vh;
+        width: 100vw;
+    }
+
+
+    .rightSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .infosRightText {
+        width: 45vw;
+    }
 }
 
 
-@media only screen and (max-width: 425px){
-    /*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 380px){
+    /*Small smartphones [325px -> 380px]*/
     .body {
         cursor:url(https://res.cloudinary.com/dldeqai4u/image/upload/v1689201751/burger/icons8-sauce-48_qjehwu.png), auto;
     }

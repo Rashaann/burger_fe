@@ -5,7 +5,7 @@ import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import useMediaQuery from '@mui/material/useMediaQuery';
  
 const styleMapCp = {display: 'flex', width: 500, height: 400, position: 'relative', backgroundColor: 'blue'}
-const styleMapSp = {display: 'flex', width: 330, height: 500, position: 'relative'}
+const styleMapSp = {display: 'flex', width: 330, height: 400, position: 'relative'}
 
 
 
@@ -40,7 +40,7 @@ class GoogleMapComponent extends React.Component {
     return (
         <Map
             google={this.props.google}
-            style={styleMapCp}
+            style={styleMapSp}
             zoom={10}
             initialCenter={{ 
                 lat: 48.8587374, 
