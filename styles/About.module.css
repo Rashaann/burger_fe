@@ -91,16 +91,185 @@
 
 @media only screen and (max-width: 900px){
     /*Tablets [601px -> 1200px]*/
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 250px;
+        padding-bottom: 20px;
+    }
+
+    .aboutSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        width: 100vw;
+        height: 350px;
+        padding: 40px;
+    }
+
+
+
+    .bunsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../public/burger4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100vw;
+        height: 700px;
+    }
+
+    .bunsSubContainer {
+        background-color: white;
+        width: 85vw;
+        height: 300px;
+        padding: 10px;
+    }
+
+
+    .friesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../public/burger5.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100vw;
+        height: 700px;
+    }
+
+    .friesSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 65vw;
+        height: 250px;
+        padding: 20px;
+    }
+
+
+    .title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .subTitle {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 16px;
+    }
 }
   
   
 @media only screen and (max-width: 600px){
-    /*Big smartphones [426px -> 600px]*/
+    /*Big smartphones [380px -> 600px]*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 200px;
+        padding-bottom: 20px;
+    }
+
+    .aboutSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        width: 100vw;
+        height: 500px;
+        padding: 40px;
+    }
+
+
+
+    .bunsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../public/burger4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .bunsSubContainer {
+        background-color: white;
+        width: 85vw;
+        height: 45vh;
+        padding: 10px;
+    }
+
+
+    .friesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../public/burger5.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .friesSubContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 70vw;
+        height: 30vh;
+        padding: 20px;
+    }
+
+
+    .title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .subTitle {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 16px;
+    }
 }
 
 
-@media only screen and (max-width: 425px){
-    /*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 380px){
+    /*Small smartphones [325px -> 380px]*/
 
     .container {
         display: flex;
@@ -120,7 +289,7 @@
         background-color: black;
         color: white;
         width: 100vw;
-        height: 80vh;
+        height: 600px;
         padding: 40px;
     }
 
